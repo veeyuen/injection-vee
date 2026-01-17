@@ -1,45 +1,54 @@
 <!doctype html>
-
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Injection Diff Guarantee Page (FIX2D2Y)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INJECTION_DIFF_GUARANTEE_FIX2D2Z_V2</title>
 </head>
 <body>
   <h1>Injected Current Metrics (Guaranteed Diff Activation)</h1>
-
-  <!-- IMPORTANT: marker contains NO numbers to avoid year-token capture -->
-
-  <p id="marker">INJECTION_DIFF_GUARANTEE_FIX2D2Y_V1</p>
+  <p><strong>INJECTION_DIFF_GUARANTEE_FIX2D2Z_V2</strong></p>
 
   <h2>Exact baseline-aligned metrics</h2>
 
-  <!-- Matches: market_size_2026__currency -->
+  <p>
+    <strong>Global EV charging investment (2040):</strong>
+    US$ 1,020.0 billion (USD 1020.0 bn)
+  </p>
 
-  <p><strong>Global EV market size (2026):</strong> US$ 1,020.0 billion</p>
-  <p>In 2026, the global electric vehicle (EV) market size is estimated at US$ 1,020.0 billion (US$ 1,020.0 bn).</p>
+  <p>
+    <strong>Global EV charging infrastructure CAGR (2026–2040):</strong>
+    3.1%
+  </p>
 
-  <!-- Matches: expected_cagr_2026_2030__percent -->
+  <p>
+    <strong>Global EV chargers (2040):</strong>
+    45.0 million chargers (45.0 million units)
+  </p>
 
-  <p><strong>Expected CAGR (2026–2030):</strong> 3.1%</p>
-  <p>The expected compound annual growth rate (CAGR) from 2026 to 2030 is 3.1%.</p>
-
-  <!-- Matches: market_share_2030__percent -->
-
-  <p><strong>EV market share (2030):</strong> 45.0%</p>
-  <p>By 2030, EV market share is 45.0% of the light-vehicle market.</p>
-
-  <!-- Matches: units_sold_2030__unit_sales -->
-
-  <p><strong>Units sold (2030):</strong> 33.0 million units</p>
-  <p>In 2030, units sold are projected to reach 33.0 million units.</p>
+  <p>
+    <strong>Global EV sales (YTD 2025):</strong>
+    33.0 million units
+  </p>
 
   <h2>Extra binding hints (safe)</h2>
-  <p style="display:none">
-    global EV electric vehicle market size revenue value USD US$ billion bn
-    expected CAGR compound annual growth rate 2026 2030 percent %
-    market share penetration share of market
-    units sold unit sales million units
+  <ul>
+    <li>Do not treat “million units” as currency.</li>
+    <li>USD / US$ indicates currency; % indicates percent.</li>
+    <li>Keep the number adjacent to its unit token (e.g., “33.0 million units”).</li>
+    <li>This page is intentionally simple: plain text, no scripts.</li>
+  </ul>
+
+  <hr />
+  <p>
+    Notes: The same metrics are repeated below to increase extraction reliability.
+  </p>
+
+  <p>
+    Global EV charging investment (2040) is USD 1020.0 bn.
+    Global EV charging infrastructure CAGR (2026–2040) is 3.1%.
+    Global EV chargers (2040) are 45.0 million units.
+    Global EV sales (YTD 2025) are 33.0 million units.
   </p>
 </body>
 </html>
